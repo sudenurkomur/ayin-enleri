@@ -1,0 +1,238 @@
+/* Sayfa genel yapısı */
+.awards-page {
+    min-height: 100vh;
+    padding: 3rem 1rem;
+    background: linear-gradient(to bottom, #033765, #1e1e40); /* gece mavisi tonları */
+    color: #fff;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  font-family: 'Orbitron', sans-serif;
+  }
+  
+  /* Sayfa başlığı */
+  .page-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    z-index: 2;
+    position: relative;
+  }
+
+  .flow-logo {
+    width: 140px;
+    height: auto;
+    position: absolute;
+    top: 40rem;
+    left: 2rem;
+    z-index: 10;
+  }
+
+
+  .trophy-icon-mini {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .top-kaizen-card {
+    background: #e9e9e9;
+    padding: 1.5rem;
+    border-radius: 12px;
+    width: 70%;
+    max-width: 450px;  /* aşırı büyümesin */    
+    border: 1px solid #e9e9e9;
+    z-index: 2;
+    position: absolute;     /* 🎯 Sabit pozisyonlama için gerekli */
+    top: 80px;              /* Yukarıdan boşluk - sen ayarlarsın */
+    right: 350px;            /* Sağdan boşluk - sen değiştirirsin */
+    color: #000000;
+    animation: glow 3s infinite ease-in-out;
+
+  
+          /* Hover için geçiş efekti */
+      transition: transform 0.3s ease;
+    }
+
+    /* 🔁 Hover efekti: hafif yukarı kalkma */
+    .top-kaizen-card:hover {
+      transform: translateY(-5px);
+    }
+      
+    @keyframes glow {
+      0% {
+        box-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700;
+      }
+      50% {
+        box-shadow: 0 0 15px #ffd700, 0 0 25px #f9ca24;
+      }
+      100% {
+        box-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700;
+      }
+    }
+
+  
+  
+  /* Alt elemanlara özel siyah renk (gerekirse override için) */
+  .top-kaizen-card h2,
+  .top-kaizen-card p,
+  .kaizen-name,
+  .kaizen-desc {
+    color: #000000;
+  }
+  
+  .kaizen-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+  
+  .kaizen-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  
+  .kaizen-desc {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+  
+  .kaizen-value {
+    font-size: 1.1rem;
+    color: #ffe066;
+    font-weight: bold;
+  }
+  
+  /* Grid yapısı */
+  .award-card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: flex-start;
+    margin: 0;              /* 🧨 Tüm boşlukları kaldır */
+    padding: 0;
+    z-index: 2;
+    position: relative;
+  }
+  
+  
+  /* Her kart */
+  .award-card {
+    background: #e9e9e9;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    width: 250px;
+    transition: transform 0.3s ease;
+    border: 1px solid #e9e9e9;
+  }
+  
+  .award-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .award-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #000000;
+  }
+  
+  .award-name {
+    font-size: 1rem;
+    color: #000000;
+;
+  }
+  .awards-header {
+    margin-top: -1.5rem;  
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 2;
+    padding-left: 6rem;
+    text-align: left;
+  }
+  
+  .page-title {
+    font-size: 5rem; /* 🔼 Büyütüldü */
+    font-weight: 900;
+    color: #ffffff;
+    line-height: 1.2;
+    white-space: pre-line;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+  }
+  
+  .page-title .indent {
+    display: block;
+    padding-left: 1.9rem; /* Sağdan girinti */
+  }
+  
+  /* Üst sıra */
+.award-card.card-1 {
+    margin-top: 5rem;
+    margin-left: 25rem;
+  }
+  
+  .award-card.card-2 {
+    margin-top: 5rem;
+    margin-left: 0rem;
+  }
+  
+  .award-card.card-3 {
+    margin-top: 5rem;
+    margin-left: 0rem;
+  }
+  
+  /* Alt sıra */
+  .award-card.card-4 {
+    margin-top: 3rem;
+    margin-left: 34rem;
+  }
+  
+  .award-card.card-5 {
+    margin-top: 3rem;
+    margin-left: 0rem;
+  }
+  
+
+@media (max-width: 768px) {
+  .top-kaizen-card {
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    margin: 2rem auto !important;
+    width: 90% !important;
+    max-width: 95% !important;
+  }
+
+  .award-card-grid {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .award-card {
+    width: 90% !important;
+    margin: 1rem auto !important;
+  }
+
+  .award-card.card-1,
+  .award-card.card-2,
+  .award-card.card-3,
+  .award-card.card-4,
+  .award-card.card-5 {
+    margin-left: 0 !important;
+    margin-top: 1rem !important;
+  }
+
+  .page-title {
+    font-size: 2.5rem !important;
+    text-align: center !important;
+    padding-left: 0 !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .awards-header {
+    padding-left: 0 !important;
+    text-align: center !important;
+    margin-top: 0 !important;
+  }
+
+  .page-title .indent {
+    padding-left: 0 !important;
+  }
+}

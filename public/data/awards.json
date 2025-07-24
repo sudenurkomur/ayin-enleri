@@ -1,0 +1,31 @@
+{
+    "month": "HAZİRAN",
+    "topKaizen": {
+      "topawardTitle": "En Yüksek Kazançlı Kaizen",
+      "name": "Alihan Doğulu",
+      "description": "Alt taban strafor istifleme iyileştirmesi"
+     },
+    "awards": [
+      {
+        "title": "En Çok Kaizen Girişi Yapan",
+        "name": "Mehmet Sarıtaş"
+      },
+      {
+        "title": "En Çok Aksiyon Kapatan",
+        "name": "Özlem Akarsu"
+      },
+      {
+        "title": "En Çok İyi Uygulama Yükleyen",
+        "name": "Sevde Nur Efe"
+      },
+      {
+        "title": "En Çok İSG Bildirimi Yapan",
+        "name": "Cem Kaya"
+      },
+      {
+        "title": "En Çok İSG Bildirimi Kapatan",
+        "name": "Özkan Şahin"
+      }
+    ]
+  }
+  
